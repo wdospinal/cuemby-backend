@@ -1,0 +1,38 @@
+{
+  "name": "cuemby",
+  "version": "1.0.0",
+  "description": "A project to scrap data of the Universidad Nacional teachers from public sites",
+  "main": "index.js",
+  "scripts": {
+    "local": "nodemon src/server/app.js",
+    "start": "node src/server/app.js",
+    "test": "mocha src/server/test --recursive"
+  },
+  "author": "ZanaCode",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.14.1",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-plugin-import": "^2.0.1",
+    "lodash": "^4.17.4",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "async": "^2.1.2",
+    "bcryptjs": "^2.4.0",
+    "body-parser": "^1.15.2",
+    "chai": "^3.5.0",
+    "cheerio": "^0.22.0",
+    "cors": "^2.8.3",
+    "express": "^4.14.1",
+    "firebase-admin": "^5.2.1",
+    "got": "^7.1.0",
+    "jwt-simple": "^0.5.1",
+    "mocha": "^3.1.2",
+    "mongodb": "^2.2.22",
+    "mongoose": "^4.9.9",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1"
+  }
+}

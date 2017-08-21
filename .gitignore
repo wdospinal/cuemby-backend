@@ -1,0 +1,18 @@
+# Environment
+.vscode
+
+
+# Build and module files
+build/
+node_modules/
+**/bundle.js
+**/vendor.bundle.js
+
+# Files to show results
+output.json
+
+# Travis
+travis.log
+
+# Error log
+error.log
