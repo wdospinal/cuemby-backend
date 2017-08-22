@@ -43,7 +43,7 @@ function addFavorite(req, res) {
   const show = req.body;
   const updates = {};
   const email = req.user.email.replace(/[.]/g, '-');
-  updates[`/favorites/${email}/${show.id}`] = show.name;
+  updates[`/favorites/${email}/${show.id}`] = { name: show.name };
   database.ref().update(updates)
     .then(respondWithResult(res))
     .catch(respondWithError(res));

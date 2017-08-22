@@ -24,7 +24,10 @@ function signToken(user) {
     role: user.role,
     exp: Math.floor(Date.now() / 1000) + (60 * 60 * 12),
   };
-  return { token: jwt.encode(payload, jwtConfig.jwtSecret) };
+  return { alias: user.alias,
+    email: user.email,
+    role: user.role,
+    token: jwt.encode(payload, jwtConfig.jwtSecret) };
 }
 
 function processUser(user, password, res) {
